@@ -11,4 +11,7 @@ for line in sys.stdin:
 
     # output tuples (word, 1) in tab-delimited format
     for word in words:
-        print '%s\t%s' % (word, "1")
+       stopwords = set(['the', 'and'])
+    for word in words: 
+        if word not in stopwords: 
+            print word
