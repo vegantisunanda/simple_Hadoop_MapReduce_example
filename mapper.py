@@ -10,8 +10,8 @@ for line in sys.stdin:
     words = line.split()
 
     # output tuples (word, 1) in tab-delimited format
-    for word in words:
        stopwords = set(['the', 'and'])
+        
     for word in words: 
         if word not in stopwords: 
             print word
