@@ -14,4 +14,4 @@ for line in sys.stdin:
         
     for word in words: 
         if word not in stop_words: 
-           print (word)
+           print '%s/t%s' % (word, "1")
